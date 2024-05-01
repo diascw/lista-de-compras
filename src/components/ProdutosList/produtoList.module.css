@@ -1,0 +1,67 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+th {
+  background-color: black;
+  font-weight: bold;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+
+
+}
+
+tr {
+  display: table-row; 
+}
+
+tr:nth-child(even) {
+  background-color: #d8d8d8;
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+tbody > tr {
+  border-radius: 20px;
+}
+
+.buttonDelete {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 3px;
+  font-size: 0.9rem;
+}
+
+.buttonDelete:hover{
+  background-color: rgb(44, 138, 7);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .buttonAdd {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
